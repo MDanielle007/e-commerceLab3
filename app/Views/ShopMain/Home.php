@@ -7,7 +7,6 @@
     <?php include 'include/weHelpSection.php'?>
     <?php include 'include/popProd.php'?>
     <?php include 'include/testimonial.php'?>
-    <?php include 'include/blogSection.php'?>
     <?php include 'include/footer.php'?>
 
 <?php include 'include/bottom.php'?>
