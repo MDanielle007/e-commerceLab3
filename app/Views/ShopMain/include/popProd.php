@@ -6,7 +6,7 @@
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <div class="product-item-sm d-flex">
                     <div class="thumbnail">
-                        <img src="images/product-1.png" alt="Image" class="img-fluid">
+                        <img src="/images/product-1.png" alt="Image" class="img-fluid">
                     </div>
                     <div class="pt-3">
                         <h3>Nordic Chair</h3>
@@ -19,7 +19,7 @@
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <div class="product-item-sm d-flex">
                     <div class="thumbnail">
-                        <img src="images/product-2.png" alt="Image" class="img-fluid">
+                        <img src="/images/product-2.png" alt="Image" class="img-fluid">
                     </div>
                     <div class="pt-3">
                         <h3>Kruzo Aero Chair</h3>
@@ -32,7 +32,7 @@
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <div class="product-item-sm d-flex">
                     <div class="thumbnail">
-                        <img src="images/product-3.png" alt="Image" class="img-fluid">
+                        <img src="/images/product-3.png" alt="Image" class="img-fluid">
                     </div>
                     <div class="pt-3">
                         <h3>Ergonomic Chair</h3>

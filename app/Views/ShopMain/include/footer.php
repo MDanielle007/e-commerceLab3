@@ -3,7 +3,9 @@
     <div class="container relative">
 
         <div class="sofa-img">
-            <img src="images/sofa.png" alt="Image" class="img-fluid">
+            <?php if(!isset($selectedProduct)):?>
+                <img src="/images/sofa.png" alt="Image" class="img-fluid">
+            <?php endif;?>
         </div>
 
         <div class="row g-5 mb-5">

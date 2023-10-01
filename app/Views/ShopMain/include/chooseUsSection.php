@@ -10,7 +10,7 @@
                     <div class="col-6 col-md-6">
                         <div class="feature">
                             <div class="icon">
-                                <img src="images/truck.svg" alt="Image" class="imf-fluid">
+                                <img src="/images/truck.svg" alt="Image" class="imf-fluid">
                             </div>
                             <h3>Fast &amp; Free Shipping</h3>
                             <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
@@ -20,7 +20,7 @@
                     <div class="col-6 col-md-6">
                         <div class="feature">
                             <div class="icon">
-                                <img src="images/bag.svg" alt="Image" class="imf-fluid">
+                                <img src="/images/bag.svg" alt="Image" class="imf-fluid">
                             </div>
                             <h3>Easy to Shop</h3>
                             <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
@@ -30,7 +30,7 @@
                     <div class="col-6 col-md-6">
                         <div class="feature">
                             <div class="icon">
-                                <img src="images/support.svg" alt="Image" class="imf-fluid">
+                                <img src="/images/support.svg" alt="Image" class="imf-fluid">
                             </div>
                             <h3>24/7 Support</h3>
                             <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
@@ -52,7 +52,7 @@
 
             <div class="col-lg-5">
                 <div class="img-wrap">
-                    <img src="images/why-choose-us-img.jpg" alt="Image" class="img-fluid">
+                    <img src="/images/why-choose-us-img.jpg" alt="Image" class="img-fluid">
                 </div>
             </div>
 

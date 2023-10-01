@@ -41,7 +41,8 @@ class UserController extends BaseController
             $data = [
                 'name' => $this->request->getVar('name'),
                 'email' => $this->request->getVar('email'),
-                'password' => password_hash($this->request->getVar('password'),PASSWORD_DEFAULT)
+                'password' => password_hash($this->request->getVar('password'),PASSWORD_DEFAULT),
+                'user_role' => 'Customer'
             ];
             $this->users->insert($data);
             return redirect()->to('/signup');
@@ -74,7 +75,12 @@ class UserController extends BaseController
                     'isLoggedIn' => TRUE
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/');
+
+                if($data['user_role'] === 'Admin'){
+                    return redirect()->to('/dashboard');
+                }else if($data['user_role'] === 'Customer'){
+                    return redirect()->to('/');
+                }
             }else{
                 $session->setFlashdata('msg','Password is incorrect');
                 return redirect()->to('/login');
@@ -89,6 +95,6 @@ class UserController extends BaseController
     {
         $session = session();
         $session->destroy(); // Destroy the user's session
-        return redirect()->to('/login'); // Redirect the user to the login page or any other page after logout
+        return redirect()->to('/'); // Redirect the user to the login page or any other page after logout
     }
 }

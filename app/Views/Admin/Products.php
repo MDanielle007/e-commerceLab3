@@ -5,6 +5,10 @@
 
         <div class="main">
             <?php include 'include/header.php'?>
+            
+            <main class="content">
+                <?php include 'include/displayProducts.php'?>
+            </main>
         </div>
     
     </div>

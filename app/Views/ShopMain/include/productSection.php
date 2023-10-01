@@ -13,19 +13,19 @@
             <?php endif;?>
             
             <?php foreach($products as $product):?>
-            <!-- Start Column 2 -->
+            <!-- Start Column  -->
             <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                <a class="product-item" href="cart.html">
+                <a class="product-item" href="/product/<?=$product['furnitureID']?>">
                     <img src="<?=base_url('/uploads/'.$product['image']);?>" class="img-fluid product-thumbnail">
                     <h3 class="product-title"><?=$product['furnitureName']?></h3>
                     <strong class="product-price">₱<?=$product['furniturePrice']?></strong>
 
                     <span class="icon-cross">
-                        <img src="images/cross.svg" class="img-fluid">
+                        <img src="/images/cross.svg" class="img-fluid">
                     </span>
                 </a>
             </div> 
-            <!-- End Column 2 -->
+            <!-- End Column  -->
             <?php endforeach;?>
         </div>
     </div>

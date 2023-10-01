@@ -69,4 +69,20 @@ class ShopMainController extends BaseController
         ];
         return view('ShopMain\Contact',$data);
     }
+
+    public function cart(){
+        $data = [
+            'heroSection' => 'Cart',
+            'activePage' => ''
+        ];
+        return view('ShopMain/Cart',$data);
+    }
+
+    public function singleProduct($id = null){
+        $data = [
+            'activePage' => 'Shop',
+            'selectedProduct' => $this->furnitures->where('furnitureID', $id)->first()
+        ];
+        return view('ShopMain/SingleProduct',$data);
+    }
 }

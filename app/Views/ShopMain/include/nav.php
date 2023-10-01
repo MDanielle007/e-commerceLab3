@@ -39,10 +39,10 @@
         <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
             <li>
                 <div class="dropdown">
-                    <a class="nav-link" href="#" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/user.svg"></a>
+                    <a class="nav-link" href="#" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="/images/user.svg"></a>
                     <ul class="dropdown-menu">
                         <?php if(session()->get('isLoggedIn')): ?>
-                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <li><a class="dropdown-item" href="/">My Profile</a></li>
                             <li><a class="dropdown-item" href="/logout">Log Out</a></li>
                         <?php else: ?>
                             <li><a class="dropdown-item" href="/login">Log In</a></li>
@@ -51,7 +51,7 @@
                     </ul>
                 </div>
             </li>
-            <li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+            <li><a class="nav-link" href="/cart"><img src="/images/cart.svg"></a></li>
         </ul>
     </div>
 </div>

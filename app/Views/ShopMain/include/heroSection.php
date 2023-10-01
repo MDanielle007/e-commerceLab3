@@ -2,9 +2,9 @@
 <div class="hero">
     <div class="container">
         <div class="row justify-content-between">
-            <?php if($heroSection === 'Shop'):?>
+            <?php if($heroSection === 'Shop' || $heroSection === 'Cart'):?>
                 <div class="intro-excerpt">
-                    <h1>Shop</h1>
+                    <h1><?=$heroSection?></h1>
                 </div>
             <?php else:?>
                 <div class="col-lg-5">
@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="hero-img-wrap">
-                        <img src="images/couch.png" class="img-fluid">
+                        <img src="/images/couch.png" class="img-fluid">
                     </div>
                 </div>
             <?php endif;?>
