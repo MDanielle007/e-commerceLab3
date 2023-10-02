@@ -77,7 +77,7 @@ class UserController extends BaseController
                 $session->set($ses_data);
 
                 if($data['user_role'] === 'Admin'){
-                    return redirect()->to('/dashboard');
+                    return redirect()->to('products');
                 }else if($data['user_role'] === 'Customer'){
                     return redirect()->to('/');
                 }

@@ -6,6 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'ShopMainController::index');
+
 $routes->get('/shop', 'ShopMainController::shop');
 $routes->get('/about', 'ShopMainController::aboutUs');
 $routes->get('/services', 'ShopMainController::shopServices');
@@ -23,5 +24,8 @@ $routes->get('/logout', 'UserController::logout');
 //     $routes->get('/dashboard', 'AdminController::dashboard');
 // });
 
-$routes->get('dashboard', 'AdminController::index');
 $routes->get('/products', 'AdminController::viewProducts');
+$routes->post('saveProduct', 'AdminController::addProduct');
+$routes->get('deleteProd/(:any)', 'AdminController::deleteProd/$1');
+$routes->get('editProd/(:any)', 'AdminController::editProd/$1');
+$routes->post('editProd/updateProd', 'AdminController::updateProd');
