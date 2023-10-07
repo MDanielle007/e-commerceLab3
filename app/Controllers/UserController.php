@@ -4,14 +4,17 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\UserModel;
+use App\Models\ProductsModel;
 
 class UserController extends BaseController
 {
     private $users;
+    private $products;
 
     function __construct(){
         helper(['form']);
         $this->users = new UserModel();
+        $this->products = new ProductsModel();
     }
 
     public function index()
@@ -72,12 +75,13 @@ class UserController extends BaseController
                 $ses_data = [
                     'id' => $data['id'],
                     'username' => $data['email'],
-                    'isLoggedIn' => TRUE
+                    'isLoggedIn' => TRUE,
+                    'userRole' => $data['user_role'],
                 ];
                 $session->set($ses_data);
 
                 if($data['user_role'] === 'Admin'){
-                    return redirect()->to('products');
+                    return view('Admin/index',['products'=>$this->products->findAll()]);
                 }else if($data['user_role'] === 'Customer'){
                     return redirect()->to('/');
                 }

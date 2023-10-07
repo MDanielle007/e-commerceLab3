@@ -53,6 +53,7 @@ class AdminController extends BaseController
                 'ext_in[image,png,jpg,gif]' // Allow only files with the .mp3 extension
             ]
         ];
+        
         if($this->validate($rules)){
             if($file->isValid() && !$file->hasMoved()){
                 if($file->move(FCPATH.'uploads/', $newFileName)){

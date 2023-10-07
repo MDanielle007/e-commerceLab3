@@ -20,12 +20,9 @@ $routes->post('/registerAcc', 'UserController::register');
 $routes->post('/loginAuth', 'UserController::loginAuth');
 $routes->get('/logout', 'UserController::logout');
 
-$routes->group('admin',['filter' => 'authGuard'], function($routes){
-    $routes->get('/dashboard', 'AdminController::dashboard');
-    $routes->get('/products', 'AdminController::viewProducts');
-    $routes->post('saveProduct', 'AdminController::addProduct');
-    $routes->get('deleteProd/(:any)', 'AdminController::deleteProd/$1');
-    $routes->get('editProd/(:any)', 'AdminController::editProd/$1');
-    $routes->post('editProd/updateProd', 'AdminController::updateProd');
-});
-
+$routes->get('/dashboard', 'AdminController::dashboard',['filter' => 'authGuard']);
+$routes->get('/products', 'AdminController::viewProducts',['filter' => 'authGuard']);
+$routes->post('saveProduct', 'AdminController::addProduct',['filter' => 'authGuard']);
+$routes->get('deleteProd/(:any)', 'AdminController::deleteProd/$1',['filter' => 'authGuard']);
+$routes->get('editProd/(:any)', 'AdminController::editProd/$1',['filter' => 'authGuard']);
+$routes->post('editProd/updateProd', 'AdminController::updateProd',['filter' => 'authGuard']);

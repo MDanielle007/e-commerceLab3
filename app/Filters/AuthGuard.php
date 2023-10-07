@@ -29,6 +29,10 @@ class AuthGuard implements FilterInterface
         if (!session()->get('isLoggedIn')) {
             return redirect()->to('/login');
         }
+
+        if(session()->get('userRole') !== 'Admin'){
+            return redirect()->to('/');
+        }
     }
 
     /**

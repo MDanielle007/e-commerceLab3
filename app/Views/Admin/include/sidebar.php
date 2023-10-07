@@ -5,8 +5,7 @@
         </a>
         
         <ul class="sidebar-nav">
-
-            <li class="sidebar-item <?php if($activePage === 'Products') echo 'active'?>">
+            <li class="sidebar-item active">
                 <a class="sidebar-link" href="/products">
                     <i class="align-middle me-2" data-feather="truck"></i> <span class="align-middle">Products</span></i>
                 </a>
